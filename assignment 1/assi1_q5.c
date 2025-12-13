@@ -1,12 +1,17 @@
 #include<stdio.h>
 int main(){
-    int a,b;
-    printf("Enter two numbers : ");
-    scanf("%d\n%d",&a,&b);
-    printf("\nA : %d\nB : %d",a,b);
-    a=a^b;
-    b=a^b;
-    a=a^b;
-    printf("\n\nSwapped numbers");
-    printf("\nA : %d\nB : %d",a,b);
+    printf("\n\nAlphabet checker : ");
+    char f;
+    printf("\nenter alphabet :");
+    scanf("%*c%c",&f);
+    int g=f;
+    if(65<=g<=117){
+        printf("\nAlphabetic character");
+        printf("\n%d",g);
+        int result = f^32;
+        printf("\nResult : %c",result);
+    }
+    else{
+        printf("\nNon alphabet character");
+    }
 }

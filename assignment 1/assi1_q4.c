@@ -1,17 +1,36 @@
 #include<stdio.h>
 int main(){
-    printf("\n\nAlphabet checker : ");
-    char f;
-    printf("\nenter alphabet :");
-    scanf("%*c%c",&f);
-    int g=f;
-    if(65<=g<=117){
-        printf("\nAlphabetic character");
-        printf("\n%d",g);
-        int result = f^32;
-        printf("\nResult : %c",result);
+    int a,b,c[8];
+    printf("Enter the number : ");
+    scanf("%d",&a);
+    for(int i=0;i<8;i++){
+        c[i]=0;
     }
-    else{
-        printf("\nNon alphabet character");
+    b=2;
+    while(a!=0){
+        for(int i=8;i>0;i--){
+            c[i-1]=a%b;
+            a=a/2;
+        }
+    }
+    printf("\nBinary number :");
+    for(int i=0;i<8;i++){
+        printf("%d",c[i]);
+    }
+    printf("\n\nParity checker : ");
+    if(d%2==1){
+        printf("\nOdd parity ,setting MSB to 1");
+        c[0]=1;
+        printf("\nbinary number :");
+        for(int i=0;i<8;i++){
+            printf("%d",c[i]);
+        }
+    }
+    if(d%2==0){
+        printf("\neven parity");
+        printf("\nbinary number :");
+        for(int i=0;i<8;i++){
+            printf("%d",c[i]);
+        }
     }
 }

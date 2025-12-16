@@ -17,6 +17,12 @@ int main(){
     for(int i=0;i<8;i++){
         printf("%d",c[i]);
     }
+    int d;
+    for(int i=0;i<8;i++){
+        if(c[i]==1){
+            d=d+1;
+        }
+    }
     printf("\n\nParity checker : ");
     if(d%2==1){
         printf("\nOdd parity ,setting MSB to 1");

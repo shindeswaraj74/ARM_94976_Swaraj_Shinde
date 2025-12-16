@@ -24,4 +24,5 @@ int main(){
             d=d+1;
         }
     }
+    printf("%d",d);
 }

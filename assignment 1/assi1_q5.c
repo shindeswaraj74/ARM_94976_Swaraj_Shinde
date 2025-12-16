@@ -3,7 +3,7 @@ int main(){
     printf("\n\nAlphabet checker : ");
     char f;
     printf("\nenter alphabet :");
-    scanf("%*c%c",&f);
+    scanf("%c",&f);
     int g=f;
     if(65<=g<=117){
         printf("\nAlphabetic character");

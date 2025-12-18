@@ -340,10 +340,10 @@ int main(void)
  8000370:	d10c      	bne.n	800038c <main+0x90>
 			while(switch_on()){
  8000372:	e003      	b.n	800037c <main+0x80>
-				green_on();
- 8000374:	f7ff ff56 	bl	8000224 <green_on>
-				blue_on();
- 8000378:	f7ff ff70 	bl	800025c <blue_on>
+				green_off();
+ 8000374:	f7ff ff64 	bl	8000240 <green_off>
+				blue_off();
+ 8000378:	f7ff ff7e 	bl	8000278 <blue_off>
 			while(switch_on()){
  800037c:	f7ff ffac 	bl	80002d8 <switch_on>
  8000380:	4603      	mov	r3, r0
@@ -356,10 +356,10 @@ int main(void)
  800038a:	e003      	b.n	8000394 <main+0x98>
 		}
 		else{
-			green_off();
- 800038c:	f7ff ff58 	bl	8000240 <green_off>
 			blue_off();
- 8000390:	f7ff ff72 	bl	8000278 <blue_off>
+ 800038c:	f7ff ff74 	bl	8000278 <blue_off>
+			green_off();
+ 8000390:	f7ff ff56 	bl	8000240 <green_off>
 		if(switch_on() && i==0){
  8000394:	e7bb      	b.n	800030e <main+0x12>
 	...

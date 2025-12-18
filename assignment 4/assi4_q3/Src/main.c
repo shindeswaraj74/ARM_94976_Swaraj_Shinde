@@ -48,14 +48,14 @@ int main(void)
 		}
 		if(switch_on() && i==2){
 			while(switch_on()){
-				green_on();
-				blue_on();
+				green_off();
+				blue_off();
 			}
 			i=0;
 		}
 		else{
-			green_off();
 			blue_off();
+			green_off();
 		}
 	}
 }

@@ -1,0 +1,2 @@
+../Src/ext_trig.c:11:6:ext_trig	0	static
+../Src/ext_trig.c:27:6:EXTI0_IRQHandler	0	static
